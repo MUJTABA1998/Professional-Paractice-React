@@ -37,5 +37,5 @@ jobs:
       
       # Deploy static site on surge
       - name: deploy on surge
-        run: surge ./ pro-mern-dev.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./ pro-mern-dev.surge.sh --token ${{ secrets.TOKEN_AUTO_DEPLOY }}
         
