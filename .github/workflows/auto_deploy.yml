@@ -33,9 +33,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: install surge
-        run: npm install --globally surge
-      
-      # Deploy static site on surge
+        run: npm install --global surge
       - name: deploy on surge
         run: surge ./ pro-mern-dev.surge.sh --token ${{ secrets.TOKEN_AUTO_DEPLOY }}
         
